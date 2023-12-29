@@ -1,0 +1,41 @@
+{
+  "Courses": [
+    {
+      "id": 1,
+      "title": "Spring Boot / Angular",
+      "image": "https://miro.medium.com/v2/resize:fit:785/0*69C4SWVvcLAc4xYm.png",
+      "price": 350
+    },
+    {
+      "id": 2,
+      "title": "Node JS / React",
+      "image": "https://neetable.com/img/blog/blog-inner/react-node-js-for-full-stack-web-development/why-combine-react-and-node-js-for-full-stack-web-development.jpg",
+      "price": 350
+    },
+    {
+      "id": 3,
+      "title": "Flutter / Firebase",
+      "image": "https://velog.velcdn.com/images/tygerhwang/post/2d5a9a68-16ea-4e04-a263-159e3bbf1bc7/image.jpeg",
+      "price": 350
+    },
+    {
+      "id": 4,
+      "title": "Business Intelligence",
+      "image": "https://www.inovaport.fr/wp-content/uploads/2017/09/Business-Intelligence.png",
+      "price": 350
+    },
+    {
+      "id": 5,
+      "title": "Artificial Intelligence",
+      "image": "https://emeritus.org/in/wp-content/uploads/sites/3/2022/10/What-is-M.Tech-in-Artificial-Intelligence_AI.jpg.optimal.jpg",
+      "price": 350
+    },
+    {
+      "id": 6,
+      "title": "Devops",
+      "image": "https://www.comexplorer.com/hubfs/schema-devops.png",
+      "price": 350
+    }
+   
+  ]
+}

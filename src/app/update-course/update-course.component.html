@@ -1,0 +1,19 @@
+<div class="dialog">        
+    <button [ngStyle]="{'float' : 'right'}" (click)="this.service.showUpdateDialog=false" type="button" class="btn-close" aria-label="Close"></button>
+
+    <form [formGroup]="addForm" (ngSubmit)="updateCourse()">
+        <div class="mb-3">
+          <label class="form-label">Title</label>
+          <input type="text" class="form-control" formControlName="title" [(ngModel)]="course.title" value={{course.title}}>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input type="text" class="form-control" formControlName="price" [(ngModel)]="course.price" value={{course.price}}>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image Link</label>
+            <input type="text" class="form-control" formControlName="image" [(ngModel)]="course.image" value={{course.image}}>
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">Update Course</button>
+      </form>
+</div>

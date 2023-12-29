@@ -1,0 +1,26 @@
+<div class="header">
+    <img src="https://media.licdn.com/dms/image/C4D0BAQHvnI12sRsnKA/company-logo_200_200/0/1630578096323?e=2147483647&v=beta&t=DkB1ReFqpdDeP4kmHtMdLceAVBCcdYiYlKn337vlA44" alt="9antra">
+    <h1>Admin Panel</h1>
+</div>
+<app-add-course *ngIf="this.service.showAddDialog"></app-add-course>
+<app-course-details [course]="selectedCourse" *ngIf="this.service.showDetailDialog"></app-course-details>
+<app-update-course [course]="selectedCourse" *ngIf="this.service.showUpdateDialog"></app-update-course>
+<button (click)="this.service.showAddDialog=true"><fa-icon [icon]="faPlus"></fa-icon> add new</button>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Details</th>
+        <th scope="col">Update</th>
+        <th scope="col">Delete</th>
+      </tr>   
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses">
+        <th>{{course.title}}</th>
+        <td><fa-icon [icon]="faList" (click)="this.service.showDetailDialog=true; openDialog(course)"></fa-icon></td>
+        <td><fa-icon [icon]="faPen"  (click)="this.service.showUpdateDialog=true; openDialog(course)"></fa-icon></td>
+        <td><fa-icon [icon]="faTrash" (click)="deleteCourse(course)"></fa-icon></td>
+      </tr>
+    </tbody>
+  </table>

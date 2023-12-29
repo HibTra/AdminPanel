@@ -1,0 +1,19 @@
+<div class="dialog">        
+    <button [ngStyle]="{'float' : 'right'}" (click)="this.service.showAddDialog=false" type="button" class="btn-close" aria-label="Close"></button>
+
+    <form [formGroup]="addForm" (ngSubmit)="addNew()">
+        <div class="mb-3">
+          <label class="form-label">Title</label>
+          <input type="text" class="form-control" formControlName="title">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input type="text" class="form-control" formControlName="price">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image Link</label>
+            <input type="text" class="form-control" formControlName="image">
+        </div>
+        <button id="submit" type="submit" class="btn btn-primary">Add new Course</button>
+      </form>
+</div>

@@ -1,0 +1,10 @@
+<div class="dialog">
+    <button [ngStyle]="{'float' : 'right'}" (click)="this.service.showDetailDialog=false" type="button" class="btn-close" aria-label="Close"></button>
+    <div class="card"  [ngStyle]="{'padding' : '50px', 'width' : '400px'}">
+        <img src={{course.image}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{course.title}}</h5>
+          <p class="card-text">{{course.price}} DT/ Month</p>
+        </div>
+      </div>
+</div>
